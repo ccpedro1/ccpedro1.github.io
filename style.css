@@ -1,0 +1,38 @@
+.validation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+form {
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+
+}
+input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+input.error-email {
+  border: 1px solid red;
+  background-color: #ffcdd2;
+}
+input.error-email:focus {
+  outline: solid 1px red;
+  border-radius: 2px
+}
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}

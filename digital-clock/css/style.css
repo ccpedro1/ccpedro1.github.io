@@ -1,0 +1,59 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url(../img/space.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  overflow: hidden;
+}
+.clock-container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background: black;
+  filter: opacity(0.9);
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: rgb(150 150 150 / 30%) 0px 7px 29px 0px;
+}
+.clock-container section {
+  text-align: center;
+  min-width: 100px;
+  position:relative;
+  font-weight: 300;
+}
+.hour:before,
+.minutes:before,
+.hour:after, 
+.minutes:after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.clock-container section:not(:last-child):before {
+  top: 35%;
+}
+.clock-container section:not(:last-child):after {
+  top: 50%;
+}
+#displayDay, #displayHour, #displayMinutes, #displaySeconds, #displayAMPM {
+  font-size: 50px;
+  margin:0;
+}
+#displayAMPM {
+  color: #4c4c4c;
+}
+.display-info {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: grey;
+  margin: 0;
+}
+

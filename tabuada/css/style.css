@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkcyan;
+}
+h1 {
+    color: #222;
+}
+.tabuada {
+    font-family: cursive;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(30, 30, 30, 0.4);
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.pontuacao {
+    display: flex;
+    justify-content: space-between;
+    color: darkcyan;
+}
+input#resposta {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    border: 5px solid darkcyan;
+}
+input#resposta::placeholder {
+    font: 25px cursive;
+}
+input:focus {
+    border: 5px solid darkcyan;
+  }
+button#enviarResposta {
+    padding: 10px;
+    font: 20px cursive;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: darkcyan;
+    border: 0;
+}
+button#enviarResposta:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
